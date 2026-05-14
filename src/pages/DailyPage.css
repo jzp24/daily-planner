@@ -1,0 +1,186 @@
+.daily-page {
+  max-width: 600px;
+}
+
+/* 倒计时条 */
+.countdown-strip {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.countdown-badge {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 日期选择器 */
+.date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.date-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.date-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 总时长卡片 */
+.total-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.total-label {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.total-time {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+}
+
+/* 区域头部 */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* 空状态 */
+.empty-hint {
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: var(--space-xxl) 0;
+}
+
+/* 任务列表 */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.task--done {
+  opacity: 0.75;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-cat {
+  display: inline-block;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.task-status {
+  font-size: 12px;
+}
+
+.status-pending {
+  color: var(--color-text-secondary);
+}
+
+.status-done {
+  color: var(--color-success);
+}
+
+.task-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.task-time {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.task-duration {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.task-actions {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+/* 表单弹窗 */
+.time-input-row {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.time-input-group {
+  flex: 1;
+}
+
+.time-label {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.time-input-wrap {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+}
+
+.time-input-wrap input[type="time"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.duration-preview {
+  margin-top: var(--space-sm);
+  font-size: 13px;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-align: right;
+}

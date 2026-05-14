@@ -1,0 +1,43 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  background: var(--color-bg);
+}
+
+.layout-header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+}
+
+.layout-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.layout-main {
+  flex: 1;
+  padding: var(--space-lg);
+  padding-bottom: 72px; /* 底部 Tab 高度 */
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .layout-header {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .layout-title {
+    font-size: 22px;
+  }
+
+  .layout-main {
+    padding: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+}

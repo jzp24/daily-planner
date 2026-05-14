@@ -1,0 +1,214 @@
+.weekly-page {
+  max-width: 600px;
+}
+
+/* 周选择器 */
+.week-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.week-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.week-range {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+/* 每日时长条 */
+.week-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.week-bar-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.bar-label {
+  width: 32px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+.bar-track {
+  flex: 1;
+  height: 12px;
+  background: var(--color-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s;
+  min-width: 2px;
+}
+
+.bar-green {
+  background: var(--color-success);
+}
+
+.bar-red {
+  background: var(--color-danger);
+}
+
+.bar-time {
+  width: 56px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-align: right;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+
+/* 周目标列表 */
+.goal-list {
+  list-style: none;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.goal-num {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.goal-input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--space-sm) 0;
+  font-size: 14px;
+}
+
+.goal-input:focus {
+  border-bottom-color: var(--color-primary);
+}
+
+/* 周总结 */
+.reflection-input {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+  margin-top: var(--space-md);
+}
+
+.reflection-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* ===== 周报查看模式 ===== */
+.weekly-report {
+  padding: var(--space-xl);
+}
+
+.report-section {
+  margin-bottom: var(--space-xl);
+}
+
+.report-heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-primary);
+}
+
+.report-empty {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+/* 目标展示 */
+.report-goals {
+  list-style: none;
+}
+
+.report-goal-item {
+  padding: var(--space-sm) 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.report-check {
+  margin-right: var(--space-sm);
+  color: var(--color-text-secondary);
+}
+
+/* 完成任务列表 */
+.report-tasks {
+  list-style: none;
+}
+
+.report-task-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.report-task-item:last-child {
+  border-bottom: none;
+}
+
+.report-task-cat {
+  display: inline-block;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.report-task-title {
+  flex: 1;
+  font-weight: 500;
+}
+
+.report-task-time {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+/* 总结展示 */
+.report-reflection {
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
